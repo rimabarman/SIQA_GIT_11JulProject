@@ -8,16 +8,27 @@ packages:
   gitUsername: rimabarman
   gitBranch: main
 - name: TPP_services_in_FCS
+  version: "1.0"
   gitServerName: kvv
   gitUrl: https://github.com/Karthik-V-IBM-10
   gitUsername: Karthik-V-IBM-10
   gitBranch: main
 services:
+- serviceName: project.siqa_git_11jul.integrations:Call_TPPService
+  packages:
+  - name: SIQA_GIT_11JulProject
+    version: "1.0"
+  - name: TPP_services_in_FCS
+    version: "1.0"
 - serviceName: project.siqa_git_11jul.integrations:Call_refData
   packages:
   - name: SIQA_GIT_11JulProject
     version: "1.0"
+  - name: TPP_services_in_FCS
+    version: "1.0"
 - serviceName: project.siqa_git_11jul.referencedata:refData
   packages:
   - name: SIQA_GIT_11JulProject
+    version: "1.0"
+  - name: TPP_services_in_FCS
     version: "1.0"
